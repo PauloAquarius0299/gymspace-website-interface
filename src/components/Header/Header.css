@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 8rem;
+    height: 8rem;
+    margin-top: -2rem;
+}
+.header-menu{
+    list-style: none;
+    display: flex;
+    gap: 2.2rem;
+    color: var(--fontColor);
+    margin-top: 2rem;
+}
+.header-menu>li:hover{
+    cursor: pointer;
+    color: var(--red);
+}
+@media  screen and (max-width: 768px) {
+    .header>:nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+    .header-menu{
+        flex-direction: column;
+        background-color: var(--caloryCard);
+        padding: 2rem;
+    }
+    .header-menu:hover{
+        color: var(--red);
+    }
+}
